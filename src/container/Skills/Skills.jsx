@@ -81,25 +81,6 @@ const Skills = () => {
                         />
 
                       </motion.div>
-
-                      {/* <ReactTooltip
-                        key={`${work.name}-2`}
-                        id={work.name}
-                        effect="solid"
-                        arrowColor="#fff"
-                        data-tooltip-content="hello world!"
-                        className="skills-tooltip"                        
-                      >
-                        {work.desc}
-                        
-                      </ReactTooltip> */}
-                      
-                      
-
-                      {/* <ReactTooltip anchorId={`atribute-${index2}`} key={`key-${index2}`}></ReactTooltip>
-                        <a id={`atribute-${index2}`} data-tooltip-content={work.desc}> ◕‿‿◕ </a>
-                      <ReactTooltip/> */}
-                      
                     </>
                   ))}
                 </motion.div>
