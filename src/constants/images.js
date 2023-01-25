@@ -13,8 +13,12 @@ import redux from '../assets/redux.png';
 import express from '../assets/express.png';
 import react from '../assets/react.svg';
 import mongodb from '../assets/mongodb.png';
+import email from '../assets/email.png'
+import mobile from '../assets/mobile.png'
 
 export default {
+  mobile,
+  email,
   mongodb,
   react,
   express,
