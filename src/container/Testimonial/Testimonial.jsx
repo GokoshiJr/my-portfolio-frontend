@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { HiChevronRight, HiChevronLeft } from 'react-icons/hi'
+
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 import './Testimonial.scss'
-import { useState, useEffect } from 'react'
 
 const Testimonial = () => {
   const [brands, setBrands] = useState([])
@@ -31,6 +31,7 @@ const Testimonial = () => {
   }, [])
 
   const test = testimonials[currentIndex]
+
   return (
     <>
       {testimonials.length && (
@@ -60,9 +61,9 @@ const Testimonial = () => {
       <div className="app__testimonials-brands app__flex">
         {brands.map((brand) => (
           <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5, type: 'tween' }}
-            key={brand.id}
+            whileInView={{opacity: [0, 1]}}
+            transition={{duration: 0.5, type: 'tween'}}
+            key={brand._id}
           >
             <img src={urlFor(brand.imgUrl)} alt={brand.name} />
           </motion.div>
